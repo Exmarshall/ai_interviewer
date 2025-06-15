@@ -8,26 +8,23 @@ const monaSans = Mona_Sans({
   subsets: ["latin"],
 });
 
-
-
 export const metadata: Metadata = {
   title: "PrepWise",
   description: "An AI-Powered Plattform for Preparing for Tech Interview",
 };
 
 export default function RootLayout({
+
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en" className="dark">
-      <body
-        className={`${monaSans.className} antialiased pattern`}
-      >
+      <body className={`${monaSans.className} antialiased pattern`}>
         {children}
 
-        <Toaster/>
+        <Toaster />
       </body>
     </html>
   );
